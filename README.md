@@ -1,64 +1,55 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+`<h1 align="center">
+  Sistema Alerta - Patient Alert System
+</h1>`
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![demo](https://github.com/iJosiasCastro/sistemaalerta/blob/main/demo/screenshot.png?raw=true)
+![demo](https://github.com/iJosiasCastro/sistemaalerta/blob/main/demo/screenshot_2.png?raw=true)
+![demo](https://github.com/iJosiasCastro/sistemaalerta/blob/main/demo/screenshot_3.png?raw=true)
 
-## About Laravel
+## Introduction
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+This system was developed for presentation at the 2st 2022 Technical Computing Olympiad in the Buenos Aires province. The primary focus of this system is to function as a patient calling and alert system. The objective is to enable patients to send a call request to the system using a device connected to Wi-Fi, a phone, or a button. Subsequently, the system displays their call on a screen and emits sounds to alert the healthcare providers for timely assistance. 
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Features
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Patient Management: The system allows the addition of patients, nurses, areas, and authorized users.
+- Assignment: Each patient can be assigned to one or multiple nurses and an area. This enables the display of patient calls on the screen along with their respective areas.
+- Real-time Alerts: Calls are displayed automatically whenever a patient sends a request. Active patients can make calls as needed.
 
-## Learning Laravel
+## Technologies Used
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+The website is developed using Laravel, a popular PHP framework known for its robustness and scalability.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Getting Started
 
-## Laravel Sponsors
+To run this Laravel project, follow these steps:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+1. Clone the repository to your local machine.
+2. Configure your environment variables, including database credentials and email settings, in the `.env` file.
+3. Install project dependencies using Composer:
 
-### Premium Partners
+   ```bash
+   composer install
+   ```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+4. Generate a new application key:
 
-## Contributing
+   ```bash
+   php artisan key:generate
+   ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+5. Run database migrations to create the required tables:
 
-## Code of Conduct
+   ```bash
+   php artisan migrate
+   ```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+6. Serve the application locally:
 
-## Security Vulnerabilities
+   ```bash
+   php artisan serve
+   ```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+You can access the website in your web browser at `http://localhost:8000`.
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Feel free to explore the website and its features, and don't forget to refer to the Laravel documentation for any additional configuration or customization needs.
