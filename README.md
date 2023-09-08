@@ -1,6 +1,6 @@
-`<h1 align="center">
+<h1 align="center">
   Sistema Alerta - Patient Alert System
-</h1>`
+</h1>
 
 ![demo](https://github.com/iJosiasCastro/sistemaalerta/blob/main/demo/screenshot.png?raw=true)
 ![demo](https://github.com/iJosiasCastro/sistemaalerta/blob/main/demo/screenshot_2.png?raw=true)
