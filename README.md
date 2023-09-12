@@ -8,7 +8,7 @@
 
 ## Introduction
 
-This system was developed for presentation at the 2st 2022 Technical Computing Olympiad in the Buenos Aires province. The primary focus of this system is to function as a patient calling and alert system. The objective is to enable patients to send a call request to the system using a device connected to Wi-Fi, a phone, or a button. Subsequently, the system displays their call on a screen and emits sounds to alert the healthcare providers for timely assistance. 
+This system was developed for presentation at the 2st 2021 Technical Computing Olympiad in the Buenos Aires province. The primary focus of this system is to function as a patient calling and alert system. The objective is to enable patients to send a call request to the system using a device connected to Wi-Fi, a phone, or a button. Subsequently, the system displays their call on a screen and emits sounds to alert the healthcare providers for timely assistance. 
 
 ## Features
 
